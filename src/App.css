@@ -2,3 +2,11 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.App{
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 600px;
+  width: 400px;
+  border: 1px solid #ccc;
+}
