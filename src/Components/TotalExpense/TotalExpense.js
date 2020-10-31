@@ -10,7 +10,8 @@ function TotalExpense() {
     const totalExpense = () => {
         var expense = 0;
         for (let key = 0; key < transactions.length; key++) {
-            expense += transactions[key].amount
+            expense = expense + Number(transactions[key].amount)
+            console.log(expense)
         }
         return expense;
     }

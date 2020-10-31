@@ -4,6 +4,7 @@ import { GlobalContext } from '../Context/GlobalContext'
 
 function ExpenseList() {
     let { transactions } = useContext(GlobalContext);
+    let { DeleteExpense } = useContext(GlobalContext);
 
     return (
         <div className="Expense__List">
@@ -12,10 +13,10 @@ function ExpenseList() {
 
                 {transactions.map(transaction => (
 
-                    <li className={transaction.amount < 0 ? "minus" : "Plus"} key={transaction.id}>
+                    <li className={Number(transaction.amount) < 0 ? "minus" : "Plus"} key={transaction.id}>
                         {transaction.text}
-                        <span> {transaction.amount < 0 ? "-": "+"}${Math.abs(transaction.amount)}</span>
-                        <button className="Delete__Btn">X</button>
+                        <span> {Number(transaction.amount) < 0 ? "-" : "+"}${Math.abs(transaction.amount)}</span>
+                        <button onClick={() => DeleteExpense(transaction.id)} className="Delete__Btn">X</button>
                     </li>
                 ))
                 }
