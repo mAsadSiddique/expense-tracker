@@ -1,0 +1,27 @@
+.title{
+    border-bottom:1px solid #ccc;
+
+}
+
+
+.Form__Group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding:3px;
+    /* font-weight: bold; */
+}
+
+input{
+    font-size: 17px;
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 10px;
+    background-color:#9c88ff;
+    border: 0;
+    border-radius: 5px;
+}

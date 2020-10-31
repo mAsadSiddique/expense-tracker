@@ -5,7 +5,19 @@
     width: 400px;
     height: 100px;
     border: 1px solid #ccc;
-    box-shadow: 5px 10px 18px #888888;}
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.Expense__Manager > div:first-child{
+    border-right: 1px solid #dedede;
+    margin-left: 10px;
+
+}
+
+.Expense__Manager > div{
+    flex: 1;
+    text-align: center;
+}
 
 .Income__Expense{
     display: flex;

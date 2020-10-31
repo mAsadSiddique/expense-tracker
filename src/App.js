@@ -2,6 +2,8 @@ import './App.css';
 import ExpenseManager from './Components/ExpenseManager/ExpenseManager';
 import Header from './Components/Header/Header';
 import TotalExpense from './Components/TotalExpense/TotalExpense';
+import ExpenseList from './Components/ExpenseList/ExpenseList';
+import AddExpense from './Components/AddExpense/AddExpense';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <TotalExpense />
       <ExpenseManager />
+      <ExpenseList />
+      <AddExpense />
     </div>
   );
 }

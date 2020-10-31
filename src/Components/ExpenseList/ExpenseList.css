@@ -1,0 +1,53 @@
+.Expense__List{
+    padding-top: 30px;
+}
+
+
+.Expense__Heading{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.Expense__items{
+    margin: 15px;
+    padding: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #FFFFFF;
+    list-style-type: none;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Amount{
+    color: rgb(88, 139, 12);
+}
+
+button{
+    cursor: pointer;
+    
+
+}
+
+/* li> .Delete__Btn{
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 56%;
+    left: 35%; */
+    /* transform: translate(1900%,-50%); */
+    /* opacity: 0; */
+    /* transition: opacity .3s ease; */
+/* } */
+
+/* .Expense__items >li:hover >.Delete__Btn{
+    opacity: 1;
+} */
