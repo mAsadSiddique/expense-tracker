@@ -8,31 +8,32 @@
     border-bottom: 1px solid #ccc;
 }
 
-.Expense__items{
-    margin: 15px;
-    padding: 10px ;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #FFFFFF;
-    list-style-type: none;
-}
-
-.list{
+.Expense__items>li{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 5px 10px 18px #888888;
 }
 
-.Amount{
-    color: rgb(88, 139, 12);
+.Plus{
+    border-right: 3px solid#2ecc71;
 }
+
+.minus{
+    border-right: 3px solid red;
+}
+
 
 button{
     cursor: pointer;
-    
-
 }
 
-/* li> .Delete__Btn{
+li> .Delete__Btn{
     cursor: pointer;
     background-color: #e74c3c;
     border: 0;
@@ -41,13 +42,13 @@ button{
     line-height: 20px;
     padding: 2px 5px;
     position: absolute;
-    top: 56%;
-    left: 35%; */
-    /* transform: translate(1900%,-50%); */
-    /* opacity: 0; */
-    /* transition: opacity .3s ease; */
-/* } */
+    top: 50%;
+    left: -85px; 
+    transform: translate(1900%,-50%); 
+    opacity: 0; 
+    transition: opacity .3s ease; 
+}
 
-/* .Expense__items >li:hover >.Delete__Btn{
+.Expense__items >li:hover >.Delete__Btn{
     opacity: 1;
-} */
+}

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ExpenseManager.css'
+import { GlobalContext } from '../Context/GlobalContext'
 
 function ExpenseManager() {
+    const { transaction } = useContext(GlobalContext)
+
     return (
         <div className="Expense__Manager">
             <div className="Income__Expense">
