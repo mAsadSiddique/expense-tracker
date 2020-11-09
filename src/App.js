@@ -13,6 +13,8 @@ function App() {
 
   }).then(token => {
     console.log(token)
+  }).catch((err) => {
+    console.log(err.message)
   })
 
 
