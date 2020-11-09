@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../Context/GlobalContext';
 import './AddExpense.css';
+// import { initNotification } from '../firebase';
 
 function AddExpense() {
     let { AddExpense } = useContext(GlobalContext);
@@ -10,15 +11,15 @@ function AddExpense() {
 
     const handleAddExpense = ev => {
         ev.preventDefault();
-        if (Number(amount) !== 0 || Number(amount) !== -0){
+        if (Number(amount) !== 0 || Number(amount) !== -0) {
             const newExpense = {
                 id: Math.floor(Math.random() * 100000000),
                 text,
                 amount: Number(amount)
             }
 
-        AddExpense(newExpense);
-        }else{
+            AddExpense(newExpense);
+        } else {
             alert("Please Enter a valid Amount...")
         }
     }
